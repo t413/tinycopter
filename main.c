@@ -20,7 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
+//HELLO!
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 #include <util/delay.h>
@@ -29,7 +29,7 @@
 #include "timers.h"
 //#include "usb_debug_only.h"
 //#include "print.h"
-
+//MERGE ME!
 #define CPU_PRESCALE(n)	(CLKPR = 0x80, CLKPR = (n))
 void putc ( void* p, char c) { uart_putchar(c); }
 
