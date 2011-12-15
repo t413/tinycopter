@@ -38,15 +38,16 @@ int main(void)
 	uart_init(115200);
 	init_printf((void*)0,putc);
 	CPU_PRESCALE(0); // set for 16 MHz clock
-	//DDRB = 0xFF;
+	DDRB = 0xFF;
 	PORTB = 0x00;
-	//usb_init();
+	DDRD = 0xFF;
+
+    //usb_init();
 	uint16_t last_print = 0;
 	uint16_t last_led = 0;
 	
 	while (1) {
-	_delay_ms(100);
-        printf("LOL");
+	    _delay_ms(100);
         uint16_t c = tics() >> 14;
 	}
 }

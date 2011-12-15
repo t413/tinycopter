@@ -30,10 +30,11 @@
 #define FRACT_MAX (1000 >> 3)
 
 void timer1_init(void){
-    TCCR1A |= (1 << WGM12); //Setup CTC mode?
-    TCCR1B = (1 << CS11) | (1 << CS10);
+    TCCR1A = 0x00; //Setup CTC mode?
+    TCCR1B = 0x0B;
     TIMSK1 = (1 << OCIE1A);
-    OCR1A   = 32000;
+    TCNT1 = 0x00;
+    OCR1A   = 1000;
 }
 
 volatile unsigned long timer0_overflow_count = 0;
@@ -50,7 +51,6 @@ void timer0_init(void){
 }
 
 ISR(TIMER1_COMPA_vect){
-    OCR1A = 32000;
     PORTD ^= 0xff;
 }
 
