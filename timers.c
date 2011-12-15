@@ -29,6 +29,13 @@
 #define FRACT_INC ((MICROSECONDS_PER_TIMER0_OVERFLOW % 1000) >> 3)
 #define FRACT_MAX (1000 >> 3)
 
+void timer1_init(void){
+    TCCR1A |= (1 << WGM12); //Setup CTC mode?
+    TCCR1B = (1 << CS11) | (1 << CS10);
+    TIMSK1 = (1 << OCIE1A);
+    OCR1A   = 32000;
+}
+
 volatile unsigned long timer0_overflow_count = 0;
 
 void timer0_init(void){
@@ -40,6 +47,11 @@ void timer0_init(void){
     sei();
     
     DDRB |= (1<<6); //port B6 as output.
+}
+
+ISR(TIMER1_COMPA_vect){
+    OCR1A = 32000;
+    PORTD ^= 0xff;
 }
 
 ISR(TIMER0_OVF_vect)

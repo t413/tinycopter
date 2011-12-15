@@ -20,7 +20,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-//HELLO!
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 #include <util/delay.h>
@@ -29,16 +28,15 @@
 #include "timers.h"
 //#include "usb_debug_only.h"
 //#include "print.h"
-//MERGE ME!
 #define CPU_PRESCALE(n)	(CLKPR = 0x80, CLKPR = (n))
 void putc ( void* p, char c) { uart_putchar(c); }
 
 int main(void)
 {
-	timer0_init();
+	//timer0_init();
+	timer1_init();
 	uart_init(115200);
 	init_printf((void*)0,putc);
-	
 	CPU_PRESCALE(0); // set for 16 MHz clock
 	//DDRB = 0xFF;
 	PORTB = 0x00;
@@ -47,17 +45,8 @@ int main(void)
 	uint16_t last_led = 0;
 	
 	while (1) {
-		uint16_t c = tics() >> 14;
-		
-		if ((c - last_print) > 1000){
-			printf("at %d\n\r", c);
-			last_print = c;
-		}
-		if ((c - last_led) > 100){
-			PORTB = ~PORTB;
-			last_led = c;
-		}
-		
+	_delay_ms(100);
+        printf("LOL");
+        uint16_t c = tics() >> 14;
 	}
 }
-

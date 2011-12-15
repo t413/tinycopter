@@ -1,0 +1,223 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.data
+  17               	.LC0:
+  18 0000 4C4F 4C00 		.string	"LOL"
+  19               	.LC1:
+  20 0004 6174 2025 		.string	"at %d\n\r"
+  20      640A 0D00 
+  21               		.section	.text.main,"ax",@progbits
+  22               	.global	main
+  24               	main:
+  25               	.LFB7:
+  26               	.LSM0:
+  27 0000 4F92      		push r4
+  28 0002 5F92      		push r5
+  29 0004 6F92      		push r6
+  30 0006 7F92      		push r7
+  31 0008 8F92      		push r8
+  32 000a 9F92      		push r9
+  33 000c AF92      		push r10
+  34 000e BF92      		push r11
+  35 0010 CF92      		push r12
+  36 0012 DF92      		push r13
+  37 0014 EF92      		push r14
+  38 0016 FF92      		push r15
+  39 0018 0F93      		push r16
+  40 001a 1F93      		push r17
+  41 001c CF93      		push r28
+  42 001e DF93      		push r29
+  43               	/* prologue: function */
+  44               	/* frame size = 0 */
+  45               	.LSM1:
+  46 0020 0E94 0000 		call timer1_init
+  47               	.LSM2:
+  48 0024 60E0      		ldi r22,lo8(115200)
+  49 0026 72EC      		ldi r23,hi8(115200)
+  50 0028 81E0      		ldi r24,hlo8(115200)
+  51 002a 90E0      		ldi r25,hhi8(115200)
+  52 002c 0E94 0000 		call uart_init
+  53               	.LSM3:
+  54 0030 80E0      		ldi r24,lo8(0)
+  55 0032 90E0      		ldi r25,hi8(0)
+  56 0034 60E0      		ldi r22,lo8(gs(putc))
+  57 0036 70E0      		ldi r23,hi8(gs(putc))
+  58 0038 0E94 0000 		call init_printf
+  59               	.LSM4:
+  60 003c 80E8      		ldi r24,lo8(-128)
+  61 003e 8093 6100 		sts 97,r24
+  62 0042 1092 6100 		sts 97,__zero_reg__
+  63               	.LSM5:
+  64 0046 15B8      		out 37-32,__zero_reg__
+  65 0048 CC24      		clr r12
+  66 004a DD24      		clr r13
+  67               	.LVL0:
+  68 004c AA24      		clr r10
+  69 004e BB24      		clr r11
+  70               	.LVL1:
+  71               	.LBB13:
+  72               	.LBB14:
+  73               	.LBB15:
+  74               	.LBB16:
+  75               	.LBB17:
+  76               	.LSM6:
+  77 0050 30E9      		ldi r19,lo8(400)
+  78 0052 432E      		mov r4,r19
+  79 0054 31E0      		ldi r19,hi8(400)
+  80 0056 532E      		mov r5,r19
+  81               	.LBE17:
+  82               	.LBE16:
+  83               	.LBE15:
+  84               	.LBE14:
+  85               	.LSM7:
+  86 0058 20E0      		ldi r18,lo8(.LC0)
+  87 005a 622E      		mov r6,r18
+  88 005c 20E0      		ldi r18,hi8(.LC0)
+  89 005e 722E      		mov r7,r18
+  90               	.LSM8:
+  91 0060 90E0      		ldi r25,lo8(.LC1)
+  92 0062 892E      		mov r8,r25
+  93 0064 90E0      		ldi r25,hi8(.LC1)
+  94 0066 992E      		mov r9,r25
+  95               	.LVL2:
+  96               	.L9:
+  97               	.LBE13:
+  98               	.LSM9:
+  99 0068 88EE      		ldi r24,lo8(1000)
+ 100 006a 93E0      		ldi r25,hi8(1000)
+ 101               	.LVL3:
+ 102               	.L2:
+ 103               	.LBB22:
+ 104               	.LBB21:
+ 105               	.LBB20:
+ 106               	.LBB19:
+ 107               	.LBB18:
+ 108               	.LSM10:
+ 109 006c F201      		movw r30,r4
+ 110               	/* #APP */
+ 111               	 ;  105 "/usr/lib/gcc/avr/4.3.5/../../../avr/include/util/delay_basic.h" 1
+ 112 006e 3197      		1: sbiw r30,1
+ 113 0070 01F4      		brne 1b
+ 114               	 ;  0 "" 2
+ 115               	/* #NOAPP */
+ 116               	.LBE18:
+ 117               	.LBE19:
+ 118               	.LSM11:
+ 119 0072 0197      		sbiw r24,1
+ 120               	.LSM12:
+ 121 0074 01F4      		brne .L2
+ 122               	.LBE20:
+ 123               	.LBE21:
+ 124               	.LSM13:
+ 125 0076 00D0      		rcall .
+ 126 0078 ADB7      		in r26,__SP_L__
+ 127 007a BEB7      		in r27,__SP_H__
+ 128 007c 1296      		adiw r26,1+1
+ 129 007e 7C92      		st X,r7
+ 130 0080 6E92      		st -X,r6
+ 131 0082 1197      		sbiw r26,1
+ 132 0084 0E94 0000 		call tfp_printf
+ 133               	.LVL4:
+ 134               	.LSM14:
+ 135 0088 0F90      		pop __tmp_reg__
+ 136 008a 0F90      		pop __tmp_reg__
+ 137 008c 0E94 0000 		call tics
+ 138 0090 7B01      		movw r14,r22
+ 139 0092 8C01      		movw r16,r24
+ 140 0094 8EE0      		ldi r24,14
+ 141 0096 1695      	1:	lsr r17
+ 142 0098 0795      		ror r16
+ 143 009a F794      		ror r15
+ 144 009c E794      		ror r14
+ 145 009e 8A95      		dec r24
+ 146 00a0 01F4      		brne 1b
+ 147 00a2 E701      		movw r28,r14
+ 148               	.LSM15:
+ 149 00a4 C701      		movw r24,r14
+ 150 00a6 8C19      		sub r24,r12
+ 151 00a8 9D09      		sbc r25,r13
+ 152 00aa 895E      		subi r24,lo8(1001)
+ 153 00ac 9340      		sbci r25,hi8(1001)
+ 154 00ae 00F0      		brlo .L3
+ 155               	.LVL5:
+ 156               	.LSM16:
+ 157 00b0 00D0      		rcall .
+ 158 00b2 00D0      		rcall .
+ 159 00b4 EDB7      		in r30,__SP_L__
+ 160 00b6 FEB7      		in r31,__SP_H__
+ 161 00b8 3196      		adiw r30,1
+ 162 00ba ADB7      		in r26,__SP_L__
+ 163 00bc BEB7      		in r27,__SP_H__
+ 164 00be 1296      		adiw r26,1+1
+ 165 00c0 9C92      		st X,r9
+ 166 00c2 8E92      		st -X,r8
+ 167 00c4 1197      		sbiw r26,1
+ 168 00c6 F382      		std Z+3,r15
+ 169 00c8 E282      		std Z+2,r14
+ 170               	.LVL6:
+ 171 00ca 0E94 0000 		call tfp_printf
+ 172 00ce 6701      		movw r12,r14
+ 173 00d0 0F90      		pop __tmp_reg__
+ 174 00d2 0F90      		pop __tmp_reg__
+ 175 00d4 0F90      		pop __tmp_reg__
+ 176 00d6 0F90      		pop __tmp_reg__
+ 177               	.LVL7:
+ 178               	.L3:
+ 179               	.LSM17:
+ 180 00d8 CE01      		movw r24,r28
+ 181 00da 8A19      		sub r24,r10
+ 182 00dc 9B09      		sbc r25,r11
+ 183 00de 8536      		cpi r24,101
+ 184 00e0 9105      		cpc r25,__zero_reg__
+ 185 00e2 00F4      		brsh .+2
+ 186 00e4 00C0      		rjmp .L9
+ 187               	.LSM18:
+ 188 00e6 85B1      		in r24,37-32
+ 189 00e8 8095      		com r24
+ 190 00ea 85B9      		out 37-32,r24
+ 191 00ec 5E01      		movw r10,r28
+ 192 00ee 00C0      		rjmp .L9
+ 193               	.LBE22:
+ 194               	.LFE7:
+ 196               		.section	.text.putc,"ax",@progbits
+ 197               	.global	putc
+ 199               	putc:
+ 200               	.LFB6:
+ 201               	.LSM19:
+ 202               	.LVL8:
+ 203               	/* prologue: function */
+ 204               	/* frame size = 0 */
+ 205 0000 862F      		mov r24,r22
+ 206               	.LVL9:
+ 207               	.LSM20:
+ 208 0002 0E94 0000 		call uart_putchar
+ 209               	.LVL10:
+ 210               	/* epilogue start */
+ 211 0006 0895      		ret
+ 212               	.LFE6:
+ 246               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.c
+     /tmp/ccaf9z4D.s:2      *ABS*:000000000000003f __SREG__
+     /tmp/ccaf9z4D.s:3      *ABS*:000000000000003e __SP_H__
+     /tmp/ccaf9z4D.s:4      *ABS*:000000000000003d __SP_L__
+     /tmp/ccaf9z4D.s:5      *ABS*:0000000000000034 __CCP__
+     /tmp/ccaf9z4D.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccaf9z4D.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccaf9z4D.s:24     .text.main:0000000000000000 main
+     /tmp/ccaf9z4D.s:199    .text.putc:0000000000000000 putc
+
+UNDEFINED SYMBOLS
+timer1_init
+uart_init
+init_printf
+tfp_printf
+tics
+uart_putchar
+__do_copy_data

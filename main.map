@@ -1,0 +1,719 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_mulhi3.o)
+                              sprintf.o (__mulhi3)
+/usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodhi4.o)
+                              sprintf.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodsi4.o)
+                              uart.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o (exit)
+/usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+/usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+                              usb_debug_only.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+pulse_start_ms      0x4               timers.o
+pulse_start_t0      0x1               timers.o
+timings             0x18              timers.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+ .text          0x0000000000000000        0x0 main.o
+ .bss           0x0000000000000000        0x0 main.o
+ .text          0x0000000000000000        0x0 usb_debug_only.o
+ .data          0x0000000000000000        0x0 usb_debug_only.o
+ .text.usb_init
+                0x0000000000000000       0x2a usb_debug_only.o
+ .text.usb_configured
+                0x0000000000000000        0x6 usb_debug_only.o
+ .text.usb_debug_putchar
+                0x0000000000000000       0x8c usb_debug_only.o
+ .text.usb_debug_flush_output
+                0x0000000000000000       0x2e usb_debug_only.o
+ .text          0x0000000000000000        0x0 uart.o
+ .data          0x0000000000000000        0x0 uart.o
+ .text.uart_getchar
+                0x0000000000000000       0x28 uart.o
+ .text.uart_available
+                0x0000000000000000       0x16 uart.o
+ .text          0x0000000000000000        0x0 i2c_bitbang.o
+ .data          0x0000000000000000        0x0 i2c_bitbang.o
+ .bss           0x0000000000000000        0x0 i2c_bitbang.o
+ .text.I2C_WriteBit
+                0x0000000000000000       0x2c i2c_bitbang.o
+ .text.I2C_ReadBit
+                0x0000000000000000       0x20 i2c_bitbang.o
+ .text.I2C_Init
+                0x0000000000000000       0x14 i2c_bitbang.o
+ .text.I2C_Start
+                0x0000000000000000       0x20 i2c_bitbang.o
+ .text.I2C_Stop
+                0x0000000000000000       0x14 i2c_bitbang.o
+ .text.I2C_Write
+                0x0000000000000000       0x22 i2c_bitbang.o
+ .text.I2C_Read
+                0x0000000000000000       0x3a i2c_bitbang.o
+ .text          0x0000000000000000        0x0 sprintf.o
+ .data          0x0000000000000000        0x0 sprintf.o
+ .text.putcp    0x0000000000000000       0x10 sprintf.o
+ .text.tfp_sprintf
+                0x0000000000000000       0x2a sprintf.o
+ .text          0x0000000000000000        0x0 print.o
+ .data          0x0000000000000000        0x0 print.o
+ .bss           0x0000000000000000        0x0 print.o
+ .text.phex1    0x0000000000000000       0x14 print.o
+ .text.phex     0x0000000000000000       0x18 print.o
+ .text.phex16   0x0000000000000000       0x14 print.o
+ .text.print_P  0x0000000000000000       0x2c print.o
+ .text          0x0000000000000000        0x0 timers.o
+ .text.timer0_init
+                0x0000000000000000       0x12 timers.o
+ .text.millis   0x0000000000000000       0x32 timers.o
+ .text.ppm_timing_read_init
+                0x0000000000000000       0x16 timers.o
+ .text.get_ppm_timings
+                0x0000000000000000       0x56 timers.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_mulhi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_mulhi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_mulhi3.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+LOAD main.o
+LOAD usb_debug_only.o
+LOAD uart.o
+LOAD i2c_bitbang.o
+LOAD sprintf.o
+LOAD print.o
+LOAD timers.o
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0xd04
+ *(.vectors)
+ .vectors       0x0000000000000000       0x98 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x0000000000000098       0xbc usb_debug_only.o
+                0x0000000000000154                . = ALIGN (0x2)
+                0x0000000000000154                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000154        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000154                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000154                __ctors_start = .
+ *(.ctors)
+                0x0000000000000154                __ctors_end = .
+                0x0000000000000154                __dtors_start = .
+ *(.dtors)
+                0x0000000000000154                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000154        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+                0x0000000000000154                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000154        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000160       0x16 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+                0x0000000000000160                __do_copy_data
+ .init4         0x0000000000000176       0x10 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+                0x0000000000000176                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000186        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+ *(.init9)
+ *(.text)
+ .text          0x000000000000018a        0x2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+                0x000000000000018a                __vector_22
+                0x000000000000018a                __vector_28
+                0x000000000000018a                __vector_1
+                0x000000000000018a                __vector_32
+                0x000000000000018a                __vector_34
+                0x000000000000018a                __bad_interrupt
+                0x000000000000018a                __vector_6
+                0x000000000000018a                __vector_31
+                0x000000000000018a                __vector_35
+                0x000000000000018a                __vector_3
+                0x000000000000018a                __vector_30
+                0x000000000000018a                __vector_25
+                0x000000000000018a                __vector_13
+                0x000000000000018a                __vector_17
+                0x000000000000018a                __vector_19
+                0x000000000000018a                __vector_7
+                0x000000000000018a                __vector_27
+                0x000000000000018a                __vector_5
+                0x000000000000018a                __vector_33
+                0x000000000000018a                __vector_37
+                0x000000000000018a                __vector_4
+                0x000000000000018a                __vector_2
+                0x000000000000018a                __vector_36
+                0x000000000000018a                __vector_29
+                0x000000000000018a                __vector_8
+                0x000000000000018a                __vector_26
+                0x000000000000018a                __vector_14
+                0x000000000000018a                __vector_10
+                0x000000000000018a                __vector_16
+                0x000000000000018a                __vector_18
+                0x000000000000018a                __vector_20
+                0x000000000000018c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.main     0x000000000000018c       0xe4 main.o
+                0x000000000000018c                main
+ .text.putc     0x0000000000000270        0x4 main.o
+                0x0000000000000270                putc
+ .text.__vector_11
+                0x0000000000000274       0x80 usb_debug_only.o
+                0x0000000000000274                __vector_11
+ .text.__vector_12
+                0x00000000000002f4      0x2b6 usb_debug_only.o
+                0x00000000000002f4                __vector_12
+ .text.uart_init
+                0x00000000000005aa       0x56 uart.o
+                0x00000000000005aa                uart_init
+ .text.uart_putchar
+                0x0000000000000600       0x2c uart.o
+                0x0000000000000600                uart_putchar
+ .text.__vector_24
+                0x000000000000062c       0x56 uart.o
+                0x000000000000062c                __vector_24
+ .text.__vector_23
+                0x0000000000000682       0x4e uart.o
+                0x0000000000000682                __vector_23
+ .text.ui2a     0x00000000000006d0       0xb0 sprintf.o
+ .text.putchw   0x0000000000000780       0x74 sprintf.o
+ .text.tfp_format
+                0x00000000000007f4      0x206 sprintf.o
+                0x00000000000007f4                tfp_format
+ .text.init_printf
+                0x00000000000009fa       0x12 sprintf.o
+                0x00000000000009fa                init_printf
+ .text.tfp_printf
+                0x0000000000000a0c       0x2a sprintf.o
+                0x0000000000000a0c                tfp_printf
+ .text.timer1_init
+                0x0000000000000a36       0x24 timers.o
+                0x0000000000000a36                timer1_init
+ .text.__vector_15
+                0x0000000000000a5a       0x2e timers.o
+                0x0000000000000a5a                __vector_15
+ .text.__vector_21
+                0x0000000000000a88       0x54 timers.o
+                0x0000000000000a88                __vector_21
+ .text.tics     0x0000000000000adc       0x2c timers.o
+                0x0000000000000adc                tics
+ .text.__vector_9
+                0x0000000000000b08      0x168 timers.o
+                0x0000000000000b08                __vector_9
+ .text.libgcc   0x0000000000000c70       0x24 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_mulhi3.o)
+                0x0000000000000c70                __mulhi3
+ .text.libgcc   0x0000000000000c94       0x28 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodhi4.o)
+                0x0000000000000c94                __udivmodhi4
+ .text.libgcc   0x0000000000000cbc       0x44 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodsi4.o)
+                0x0000000000000cbc                __udivmodsi4
+                0x0000000000000d00                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000d00        0x0 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+                0x0000000000000d00                exit
+                0x0000000000000d00                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000d00        0x4 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000d04                _etext = .
+
+.data           0x0000000000800100        0xe load address 0x0000000000000d04
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0xc main.o
+ .data          0x000000000080010c        0x1 timers.o
+                0x000000000080010c                position
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x000000000080010e                . = ALIGN (0x2)
+ *fill*         0x000000000080010d        0x1 00
+                0x000000000080010e                _edata = .
+                0x000000000080010e                PROVIDE (__data_end, .)
+
+.bss            0x000000000080010e       0x95
+                0x000000000080010e                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x000000000080010e        0x3 usb_debug_only.o
+ .bss           0x0000000000800111       0x6c uart.o
+ .bss           0x000000000080017d        0x4 sprintf.o
+ .bss           0x0000000000800181        0x5 timers.o
+                0x0000000000800181                timer0_overflow_count
+                0x0000000000800185                resets
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800186       0x1d timers.o
+                0x0000000000800186                pulse_start_ms
+                0x000000000080018a                pulse_start_t0
+                0x000000000080018b                timings
+                0x00000000008001a3                PROVIDE (__bss_end, .)
+                0x0000000000000d04                __data_load_start = LOADADDR (.data)
+                0x0000000000000d12                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008001a3        0x0
+                0x00000000008001a3                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008001a3                PROVIDE (__noinit_end, .)
+                0x00000000008001a3                _end = .
+                0x00000000008001a3                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000      0x6b4
+ *(.stab)
+ .stab          0x0000000000000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+
+.stabstr        0x0000000000000000       0x54
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x1f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 main.o
+ .debug_aranges
+                0x0000000000000028       0x48 usb_debug_only.o
+ .debug_aranges
+                0x0000000000000070       0x48 uart.o
+ .debug_aranges
+                0x00000000000000b8       0x50 i2c_bitbang.o
+ .debug_aranges
+                0x0000000000000108       0x50 sprintf.o
+ .debug_aranges
+                0x0000000000000158       0x38 print.o
+ .debug_aranges
+                0x0000000000000190       0x60 timers.o
+
+.debug_pubnames
+                0x0000000000000000      0x324
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x24 main.o
+ .debug_pubnames
+                0x0000000000000024       0x83 usb_debug_only.o
+ .debug_pubnames
+                0x00000000000000a7       0x75 uart.o
+ .debug_pubnames
+                0x000000000000011c       0x76 i2c_bitbang.o
+ .debug_pubnames
+                0x0000000000000192       0x50 sprintf.o
+ .debug_pubnames
+                0x00000000000001e2       0x3c print.o
+ .debug_pubnames
+                0x000000000000021e      0x106 timers.o
+
+.debug_info     0x0000000000000000     0x16ba
+ *(.debug_info)
+ .debug_info    0x0000000000000000      0x18b main.o
+ .debug_info    0x000000000000018b      0x5f9 usb_debug_only.o
+ .debug_info    0x0000000000000784      0x230 uart.o
+ .debug_info    0x00000000000009b4      0x483 i2c_bitbang.o
+ .debug_info    0x0000000000000e37      0x48b sprintf.o
+ .debug_info    0x00000000000012c2      0x156 print.o
+ .debug_info    0x0000000000001418      0x2a2 timers.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000      0x8b8
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x10a main.o
+ .debug_abbrev  0x000000000000010a      0x190 usb_debug_only.o
+ .debug_abbrev  0x000000000000029a       0xe5 uart.o
+ .debug_abbrev  0x000000000000037f      0x140 i2c_bitbang.o
+ .debug_abbrev  0x00000000000004bf      0x216 sprintf.o
+ .debug_abbrev  0x00000000000006d5       0x9d print.o
+ .debug_abbrev  0x0000000000000772      0x146 timers.o
+
+.debug_line     0x0000000000000000     0x13fb
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x1a2 main.o
+ .debug_line    0x00000000000001a2      0x5e6 usb_debug_only.o
+ .debug_line    0x0000000000000788      0x234 uart.o
+ .debug_line    0x00000000000009bc      0x330 i2c_bitbang.o
+ .debug_line    0x0000000000000cec      0x30a sprintf.o
+ .debug_line    0x0000000000000ff6      0x139 print.o
+ .debug_line    0x000000000000112f      0x2cc timers.o
+
+.debug_frame    0x0000000000000000      0x300
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x30 main.o
+ .debug_frame   0x0000000000000030       0x70 usb_debug_only.o
+ .debug_frame   0x00000000000000a0       0x70 uart.o
+ .debug_frame   0x0000000000000110       0x80 i2c_bitbang.o
+ .debug_frame   0x0000000000000190       0x80 sprintf.o
+ .debug_frame   0x0000000000000210       0x50 print.o
+ .debug_frame   0x0000000000000260       0xa0 timers.o
+
+.debug_str      0x0000000000000000      0x556
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xbe main.o
+                                         0xf7 (size before relaxing)
+ .debug_str     0x00000000000000be      0x203 usb_debug_only.o
+                                        0x2be (size before relaxing)
+ .debug_str     0x00000000000002c1       0xb0 uart.o
+                                        0x14c (size before relaxing)
+ .debug_str     0x0000000000000371       0x56 i2c_bitbang.o
+                                        0x128 (size before relaxing)
+ .debug_str     0x00000000000003c7       0x9f sprintf.o
+                                         0xe6 (size before relaxing)
+ .debug_str     0x0000000000000466       0x22 print.o
+                                         0xd4 (size before relaxing)
+ .debug_str     0x0000000000000488       0xce timers.o
+                                        0x16f (size before relaxing)
+
+.debug_loc      0x0000000000000000      0xe7f
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x93 main.o
+ .debug_loc     0x0000000000000093      0x566 usb_debug_only.o
+ .debug_loc     0x00000000000005f9       0xbc uart.o
+ .debug_loc     0x00000000000006b5      0x106 i2c_bitbang.o
+ .debug_loc     0x00000000000007bb      0x4d8 sprintf.o
+ .debug_loc     0x0000000000000c93       0xed print.o
+ .debug_loc     0x0000000000000d80       0xff timers.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000      0x278
+ .debug_ranges  0x0000000000000000       0x80 main.o
+ .debug_ranges  0x0000000000000080       0x70 usb_debug_only.o
+ .debug_ranges  0x00000000000000f0       0x40 uart.o
+ .debug_ranges  0x0000000000000130       0x48 i2c_bitbang.o
+ .debug_ranges  0x0000000000000178       0x78 sprintf.o
+ .debug_ranges  0x00000000000001f0       0x30 print.o
+ .debug_ranges  0x0000000000000220       0x58 timers.o
+
+Cross Reference Table
+
+Symbol                                            File
+I2C_Init                                          i2c_bitbang.o
+I2C_Read                                          i2c_bitbang.o
+I2C_ReadBit                                       i2c_bitbang.o
+I2C_Start                                         i2c_bitbang.o
+I2C_Stop                                          i2c_bitbang.o
+I2C_Write                                         i2c_bitbang.o
+I2C_WriteBit                                      i2c_bitbang.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_clear_bss.o)
+                                                  timers.o
+                                                  sprintf.o
+                                                  uart.o
+                                                  usb_debug_only.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_copy_data.o)
+                                                  timers.o
+                                                  main.o
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__mulhi3                                          /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_mulhi3.o)
+                                                  sprintf.o
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodhi4.o)
+                                                  sprintf.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_udivmodsi4.o)
+                                                  uart.o
+__vector_1                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_11                                       usb_debug_only.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_12                                       usb_debug_only.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_13                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_14                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_15                                       timers.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_19                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_2                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_21                                       timers.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_22                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_23                                       uart.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_24                                       uart.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_25                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_26                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_27                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_28                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_29                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_3                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_30                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_31                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_32                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_33                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_34                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_35                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_36                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_37                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_4                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_5                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_9                                        timers.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+_exit                                             /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+exit                                              /usr/lib/gcc/avr/4.3.5/avr35/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+get_ppm_timings                                   timers.o
+init_printf                                       sprintf.o
+                                                  main.o
+main                                              main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr35/crtm8u2.o
+millis                                            timers.o
+phex                                              print.o
+phex1                                             print.o
+phex16                                            print.o
+position                                          timers.o
+ppm_timing_read_init                              timers.o
+print_P                                           print.o
+pulse_start_ms                                    timers.o
+pulse_start_t0                                    timers.o
+putc                                              main.o
+resets                                            timers.o
+tfp_format                                        sprintf.o
+tfp_printf                                        sprintf.o
+                                                  main.o
+tfp_sprintf                                       sprintf.o
+tics                                              timers.o
+                                                  main.o
+timer0_init                                       timers.o
+timer0_overflow_count                             timers.o
+timer1_init                                       timers.o
+                                                  main.o
+timings                                           timers.o
+uart_available                                    uart.o
+uart_getchar                                      uart.o
+uart_init                                         uart.o
+                                                  main.o
+uart_putchar                                      uart.o
+                                                  main.o
+usb_configured                                    usb_debug_only.o
+usb_debug_flush_output                            usb_debug_only.o
+usb_debug_putchar                                 usb_debug_only.o
+                                                  print.o
+usb_init                                          usb_debug_only.o
